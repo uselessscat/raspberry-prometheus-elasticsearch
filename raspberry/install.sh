@@ -22,3 +22,6 @@ fi
 go get -d github.com/prometheus/node_exporter
 cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
 make
+
+mkdir /usr/node_exporter
+mv node_exporter /usr/node_exporter
